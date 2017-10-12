@@ -10,7 +10,7 @@ router.get('/:id', authHelper.isLogin, authHelper.isUserAuth, userController.fin
 
 // router.post('/signup', userController.registerNewUser)
 
-router.post('/signin', userController.setFBAccessToken, userController.loginUser)
+router.post('/signin', userController.setFBAccessToken, authHelper.isLogin, userController.loginUser)
 
 // router.get('/', userController.setFBAccessToken, userController.getUser)
 
