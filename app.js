@@ -21,7 +21,7 @@ var app = express();
 //   }
 // })
 
-mongoose.connect('mongodb://yosua1011:bukalapak@todo-api-shard-00-00-trzeo.mongodb.net:27017,todo-api-shard-00-01-trzeo.mongodb.net:27017,todo-api-shard-00-02-trzeo.mongodb.net:27017/test?ssl=true&replicaSet=todo-api-shard-0&authSource=admin', (err) => {
+mongoose.connect('mongodb://yosua1011:9aibrlGqtcMfJz3H@todo-api-shard-00-00-trzeo.mongodb.net:27017,todo-api-shard-00-01-trzeo.mongodb.net:27017,todo-api-shard-00-02-trzeo.mongodb.net:27017/test?ssl=true&replicaSet=todo-api-shard-0&authSource=admin', (err) => {
   if (!err) {
     console.log('Database connected')
   } else {
